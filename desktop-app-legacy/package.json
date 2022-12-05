@@ -105,39 +105,25 @@
       "extendInfo": {
         "CFBundleURLTypes": [
           {
-            "CFBundleURLSchemes": [
-              "responsively"
-            ],
+            "CFBundleURLSchemes": ["responsively"],
             "CFBundleURLName": "app.responsively"
           }
         ]
       },
       "icon": "resources/icon.icns",
-      "target": [
-        "dmg",
-        "zip"
-      ],
+      "target": ["dmg", "zip"],
       "fileAssociations": [
         {
-          "ext": [
-            "html",
-            "htm"
-          ],
+          "ext": ["html", "htm"],
           "role": "Viewer"
         }
       ]
     },
     "win": {
-      "target": [
-        "nsis",
-        "portable"
-      ],
+      "target": ["nsis", "portable"],
       "fileAssociations": [
         {
-          "ext": [
-            "html",
-            "htm"
-          ],
+          "ext": ["html", "htm"],
           "role": "Viewer"
         }
       ]
@@ -146,10 +132,7 @@
       "deleteAppDataOnUninstall": true
     },
     "linux": {
-      "target": [
-        "AppImage",
-        "rpm"
-      ],
+      "target": ["AppImage", "rpm"],
       "category": "Development"
     },
     "directories": {
@@ -179,17 +162,11 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/internals/mocks/fileMock.js",
       "\\.(css|less|sass|scss)$": "identity-obj-proxy"
     },
-    "moduleFileExtensions": [
-      "js",
-      "jsx",
-      "json"
-    ],
+    "moduleFileExtensions": ["js", "jsx", "json"],
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     },
-    "setupFiles": [
-      "./internals/scripts/CheckBuiltsExist.js"
-    ]
+    "setupFiles": ["./internals/scripts/CheckBuiltsExist.js"]
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
@@ -229,7 +206,7 @@
     "cross-spawn": "^6.0.5",
     "css-loader": "^1.0.1",
     "detect-port": "^1.3.0",
-    "electron": "9.3.1",
+    "electron": "20.0.1",
     "electron-builder": "^22.8.0",
     "electron-devtools-installer": "^3.1.1",
     "enzyme": "^3.7.0",
